@@ -1,0 +1,136 @@
+	<!--<script src="https://code.jquery.com/jquery-1.10.2.js"></script>-->
+	  <!--<script src="scripts.js"></script>-->
+
+
+		<div class="pages">
+		  <div data-page="projects" class="page no-toolbar no-navbar">
+			<div class="page-content">
+			
+			 <div class="navbarpages">
+			   <div class="nav_left_logo"><a href="index-2.html"><img src="images/logo.png" alt="" title="" /></a></div>
+			   <div class="nav_right_button"><a href="menu.html"><img src="images/icons/white/menu.png" alt="" title="" /></a></div>
+			 </div>
+			 <div id="pages_maincontent">
+			 
+					  <h2 class="page_title">Faça uma pré-reserva dos nossos serviços.</h2> 
+					 
+					  <div class="page_content"> 
+
+						<div class="contactform">
+					  <!-- <form  action="" method=""> <!--id="userForm" id="ContactForm"  action="recebe-reserva.php"-->
+						
+						<label>Nome:</label>
+						<input type="text" name="nome" id="nome" value="" class="form_input" />
+						
+						<label>Email:</label>
+						<input type="text" name="email" id="email" value="" class="form_input" />
+						
+						<label>Serviços:</label>
+						<div class="selector_overlay">
+							<select name="servico" id="servico" class="cs-select cs-skin-overlay selectoptions">
+							  <option value="" disabled="disabled" selected>Escolha um serviço</option>
+							  <option value="1">Regularização de Drones</option>
+							  <option value="2">Inclusão de Aeronaves e Homologação de Aeroportos</option>
+							  <option value="3">Homologação de Helipontos, Aeródromos e Helidecks</option>
+							  <option value="4">Homologação Aeronáutica na ANAC</option>
+							  <option value="5">Defesas de Multas e Autos de Infração junto a ANAC e DECEA.</option>
+							  <option value="6">Renovação de Habilitação Técnica Aeronáutica</option>
+							  <option value="7">Transferência de Propriedade de Aeronaves junto ao RAB – ANAC e ANATEL</option>
+							  <option value="8">Gestão de Qualidade</option>
+							  <option value="9">Gestão em Segurança Operacional</option>
+							  <option value="10">Outros</option>
+							</select>
+						</div>	
+					
+						<label>Cidade:</label>
+						<input type="text" name="cidade" id="cidade" value="" class="form_input" />
+						
+						<label>Telefone:</label>
+						<input type="text" name="tel" id="tel" value="" class="form_input" />
+						
+						<label>Endereço:</label>
+						<input type="text" name="endereco" id="endereco" value="" class="form_input" />
+						
+						<label>CEP:</label>
+						<input type="text" name="cep" value="" id="cep" class="form_input" />
+						
+						
+						
+
+						<label>Obs:</label>
+						<textarea name="descricao" id="descricao" class="form_textarea" rows="" cols=""></textarea>
+					   
+						<input type="submit"  class="form_submit"  value="enviar" id="btnEnviarDados"/>
+						
+						 
+						<!--</form>-->
+						</div>
+						
+						
+					
+						
+
+					  
+					  
+					  </div>
+			  
+			  </div>
+			  
+			  
+			</div>
+		  </div>
+		</div>
+
+
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js "></script>
+		<script>
+		$(document).ready(function(){
+		alert( "chegou" )
+			$('#userForm').submit(function(){
+			
+				// show that something is loading
+				//$('#response').html("<b>Loading response...</b>");
+				 
+				/*
+				 * 'post_receiver.php' - where you will pass the form data
+				 * $(this).serialize() - to easily read form data
+				 * function(data){... - data contains the response from post_receiver.php
+				 */
+				$.ajax({
+					type: 'POST',
+					url: 'recebe-reserva.php',            
+					data: $(this).serialize(),
+					 success:function(){
+									alert( "Solicitação feita com sucesso!" )
+								setTimeout(function () {
+									 alert( "Solicitação feita com delay!" )
+								}, 800);
+					 
+					  };
+					
+					
+				})
+				
+				
+				.done(function(data){
+					 
+					// show the response
+					$('#response').html(data);
+					 
+				})
+				.fail(function() {
+				 
+					// just in case posting your form failed
+					alert( "Erro no envio. Por favor tente de novo." );
+					 
+				});
+		 
+				// to prevent refreshing the whole page page
+				return false;
+		 
+			});
+		});
+		</script>-->
+
+
+
